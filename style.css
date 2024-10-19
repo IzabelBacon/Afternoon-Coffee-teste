@@ -147,4 +147,19 @@ body {
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Depende da quantidade de imagens */
+}
+
+.carousel-images img {
+    width: 100%; /* Cada imagem ocupa 100% da largura do container */
+}
+
 
