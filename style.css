@@ -3,7 +3,7 @@
     --main-bg-color: #E2BEFF;
     --hover-bg-color: lightblue;
     --main-text-color: rgb(0, 0, 0);
-    --hover-text-color: white;
+    --hover-text-color: #E2BEFF;
     --transition-speed: 0.3s;
 }
 
@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Dancing Script', cursive, sans-serif;
-    background-color: #f5f5f5; /* Adicionar uma cor de fundo leve */
+    background-color:#E2BEFF; /* Adicionar uma cor de fundo leve */
 }
 
 /* Estilos da Barra de Navegação */
@@ -178,7 +178,7 @@ body {
     }
 
     .prev, .next {
-        padding: 10px;
+        padding: 5px;
         .carousel-images {
             display: flex;
             transition: transform 0.5s ease-in-out; /* Faz a transição suave ao mover os slides */
