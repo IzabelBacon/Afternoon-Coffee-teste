@@ -35,7 +35,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: blue;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
@@ -48,7 +48,7 @@ body {
 }
 
 .menu a:active {
-    background-color: darkblue;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -73,7 +73,7 @@ body {
 .dropdown-content li a {
     display: block;
     padding: 10px;
-    color: blue;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
