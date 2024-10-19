@@ -179,5 +179,11 @@ body {
 
     .prev, .next {
         padding: 10px;
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out; /* Faz a transição suave ao mover os slides */
+        }
+        
     }
 }
+
