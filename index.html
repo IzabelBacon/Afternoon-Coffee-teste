@@ -10,7 +10,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="logogatinho.png" alt="Logo">
+                <img src="logogatinho.png" alt="Logo do site">
             </div>
             <ul class="menu">
                 <li><a href="#" class="active">Home</a></li>
@@ -21,60 +21,38 @@
                         <li><a href="#">Doces</a></li>
                         <li><a href="#">Salgados</a></li>
                         <li><a href="#">Café</a></li>
-                        <li><a href="#">chás</a></li>
+                        <li><a href="#">Chás</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Contatos</a></li>
             </ul>
             <div class="social-links">
-                <img src="whatsapprosa.png" href="https://www.instagram.com" target="_blank" alt="Instagram"></a>
-                <img src="instagramrosa.png" href="https://www.instagram.com" target="_blank" alt="Instagram"></a>
-                <img src="facebookrosa.png" href="https://www.facebook.com" target="_blank"alt="Facebook"></a>
+                <!-- Envolvendo as imagens com <a> para que sejam clicáveis -->
+                <a href="https://wa.me/seunumerowhatsapp" target="_blank">
+                    <img src="whatsapprosa.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="instagramrosa.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebookrosa.png" alt="Facebook">
+                </a>
             </div>
         </nav>
-        <img src="bannerrosa.png" alt="bannerrosa">
+        <img src="bannerrosa.png" alt="Banner rosa com uma imagem decorativa">
     </header>
-    let currentIndex = 0;
 
-        function moveCarousel(direction) {
-            const images = document.querySelector('.carousel-images');
-            const totalImages = images.children.length;
-            currentIndex += direction;
-
-            if (currentIndex < 0) {
-                currentIndex = totalImages - 1; // Vai para a última imagem
-            } else if (currentIndex >= totalImages) {
-                currentIndex = 0; // Volta para a primeira imagem
-            }
-
-            const offset = -currentIndex * 100; // Move o carrossel
-            images.style.transform = `translateX(${offset}%)`;
-        }
+    <!-- Carrossel de imagens -->
     <div class="carousel">
         <div class="carousel-images">
-            <img src="" alt="Imagem 1">
-            <img src="2.png" alt="Imagem 2">
-            <img src="3.png" alt="Imagem 3">
+            <img src="1.png" alt="Imagem 1 do carrossel">
+            <img src="2.png" alt="Imagem 2 do carrossel">
+            <img src="3.png" alt="Imagem 3 do carrossel">
         </div>
         <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
         <button class="next" onclick="moveCarousel(1)">&#10095;</button>
     </div>
 
-</div>
-<script src="script.js"></script>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel de Imagens</title>
-    <style>
-
-    </style>
-</head>
-<body>
-</body>
-</html>
-
+    <script src="script.js"></script>
 </body>
 </html>
